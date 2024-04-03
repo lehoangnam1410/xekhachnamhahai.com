@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HÀ HẢI LIMOUSINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/calendars.css">
+    <!-- <script src="assets/js/calendars.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="home.html"><img src="image/logo.jpg" alt="logo" class="logo"></a>
+        </div>
+        <div class="page">
+            <div class="home"><a href="home.html">Trang chủ</a></div>
+            <div class="chungtoi"><a href="about.html">Chúng tôi</a></div>
+            <div class="tintuc1"><a href="new.html">Tin tức &amp; Cộng đồng</a></div>
+            <div class="lienhe"><a href="contact.html">Liên hệ</a></div>
+            <div class="dangnhap"><a href="url_to_login">Đăng nhập</a></div>
+        </div>
+    </div>
+    <div class="chuchay" style=" text-align: center; margin-top: 50px;">
+        <span><h3>HÀ HẢI LIMOUSINE CHUYÊN TUYẾN HÀ NỘI - THÁI BÌNH</h3></span>
+    </div>
+    <div class="logo_trip">
+        <div class="large-image">
+            <img src="image/slide1.jpg" alt="Large Image" class="slide-image" id="largeImage">
+        </div>
+        <div class="trip">
+            <div class="searchTicket">
+                <div class="searchTicketItem" onclick="userClick_diemdi()">
+                    <div class="searchIteamLeft">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="title">Điểm đi</p> 
+                    </div>
+                    <div class="searchIteamRight" id="diemdi">
+                         Chọn điểm đi
+                    </div>
+                    <ul class="option" id="option1" style="display: none;">
+                        <li class="tab1">Hà Nội</li>
+                        <li class="choose_diemdi">BX.Yên Nghĩa</li>
+                        <li class="choose_diemdi">86 Lê Trọng Tấn</li>
+                        <li class="choose_diemdi">CT7 - xuân mai dương nội</li>
+                        <li class="choose_diemdi">Văn Khê dương nội</li>
+                        <li class="choose_diemdi">Ngã 4 Trung Văn</li>
+                        <li class="tab1">Nam Định</li>
+                        <li class="choose_diemdi">VP Cầu Đá (Nam Định)</li>
+                        <li class="tab1">Thái Bình</li>
+                        <li class="choose_diemdi">Thái Bình đón trả tận nơi</li>
+                    </ul>
+                </div>
+                <div class="searchTicketItem" onclick="userClick_diemden()">
+                    <div class="searchIteamLeft">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="title">Điểm đến</p> 
+                    </div>
+                    <div class="searchIteamRight" id="diemden">
+                         Chọn điểm đến
+                    </div>
+                    <ul class="option" id="option2" style="display: none;">
+                        <li class="tab1">Hà Nội</li>
+                        <li class="choose_diemden">BX.Yên Nghĩa</li>
+                        <li class="choose_diemden">86 Lê Trọng Tấn</li>
+                        <li class="choose_diemden">CT7 - xuân mai dương nội</li>
+                        <li class="choose_diemden">Văn Khê dương nội</li>
+                        <li class="choose_diemden">Ngã 4 Trung Văn</li>
+                        <li class="tab1">Nam Định</li>
+                        <li class="choose_diemden">VP Cầu Đá (Nam Định)</li>
+                        <li class="tab1">Thái Bình</li>
+                        <li class="choose_diemden">Thái Bình đón trả tận nơi</li>
+                    </ul>
+                </div>
+                <div class="searchTicketItem"  onclick="userClick_ngay()">
+                    <div class="searchIteamLeft">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="title">Ngày tháng</p> 
+                    </div>
+                    <div class="searchIteamRight">
+                         03/4/2024
+                    </div>
+                    <div class="calendar" id="option3" style="display: none;">
+                    </div>
+                </div>
+                <div class="searchTicketItem ticketBlack">
+                    <div class="searchIteamLeft">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="searchIteamRight">
+                        Tìm Chuyến 
+                    </div>
+                </div>
+            </div>
+            <div class="filterTrip">
+                <div class="hr"></div>
+                <h3>DỄ DÀNG ĐẶT CHUYẾN XE TRÊN WEBSITE</h3>
+                <div class="filterTripIcon">
+                    <img src="image/clone.PNG" alt="">
+                </div>
+                <p>Chọn chuyến, chỗ ngồi phụ hợp và điền thông tin</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="thongtin">
+        <div class="a1">THANH TOÁN ONLINE NHANH CHÓNG VÀ THUẬN LỢI</div>
+        <div class="a2">
+            <div>Đặt giữ chỗ trước và thanh toán sau</div>
+            <div>Thanh toán quét mã VNPAY-QR chỉ 1 thao tác</div>
+        </div>
+        <div class="a3">TỔNG ĐÀI ĐẶT VÉ VÀ CHĂM SÓC KHÁCH HÀNG 24/7: 19001069</div>
+    </div>
+    <div class="b"><h3>Giới thiệu về HÀ HẢI LIMOUSINE</h3></div>
+    <div class="b1">Xe limousine Hà Nội đi Thái Bình và ngược lại</div>
+    <div class="c">
+        <div class="c1">
+            <div class="c11"><h3>Danh sách điểm</h3></div>
+            <div class="c12">Địa chỉ chi tiết các điểm thuộc nhà xe chúng tôi</div>
+            <div class="c13"><a href="dsdiem.html">Xem đầy đủ</a></div>
+        </div>
+        <div class="c2">
+            <div class="c21"><h3>Tuyến đường</h3></div>
+            <div class="c22">Danh sách các tuyến đường của nhà xe chúng tôi</div>
+            <div class="c23"><a href="dstuyenduong.html">Xem đầy đủ</a></div>
+        </div>
+    </div>
+    <div class="c3"><h3>TIN TỨC</h3></div>
+    <div class="tintuc">
+        <div class="tren">
+            <div class="d1">
+                <div class="d11"><img src="/image/logo.jpg" alt="logo"></div>
+                <div class="d12"><a href="csktrave.html">CHÍNH SÁCH KIỂM TRA VÉ</a></div>
+                <div class="d13">09/03/2023</div>
+            </div>
+            <div class="d2">
+                <div class="d21"><img src="/image/logo.jpg" alt="logo"></div>
+                <div class="d22"><a href="csbaomat.html">CHÍNH SÁCH BẢO MẬT THÔNG TIN</a></div>
+                <div class="d23">09/03/2023</div>
+            </div>
+        </div>
+        <div class="duoi">
+            <div class="d3">
+                <div class="d31"><img src="/image/logo.jpg" alt="logo"></div>
+                <div class="d32"><a href="qdvshttt.html">QUY ĐỊNH VÀ HÌNH THỨC THANH TOÁN</a></div>
+                <div class="d33">09/03/2023</div>
+            </div>
+            <div class="d4">
+                <div class="d41"><img src="/image/logo.jpg" alt="logo"></div>
+                <div class="d42"><a href="csdtvvsht.html">CHÍNH SÁCH ĐỔI TRẢ VÉ VÀ HOÀN TIỀN</a></div>
+                <div class="d43">09/03/2023</div>
+            </div>
+        </div>
+    </div>
+    <div class="chantrang">
+        <div class="mot">
+            <div><h3>HÀ HẢI LIMOUSINE</h3></div>
+            <div>Địa chỉ: Bến xe Thái Bình ĐT223, P.Bồ Xuyên, TP Thái Bình, Thái Bình</div>
+            <div>
+                <div>Email: xenamhahai@gmail.com</div>
+                <div>Tổng đài: 19001069</div>
+            </div>
+        </div>
+        <div class="hai">
+            <div><h3>CÁC HÌNH THỨC THANH TOÁN</h3></div>
+            <div><img src="/image/tttt.jpg" alt=""></div>
+            <div><img src="/image/visa.jpg" alt=""></div>
+            <div><img src="/image/vnpay.jpg" alt=""></div>
+            <div></div>
+        </div>
+        <div class="ba"><h3>HƯỚNG DẪN MUA VÉ</h3></div>
+        <div class="bon"><h3>BẢN ĐỒ</h3></div>
+    </div>
+</div>
+<script src="main.js"></script>
+<script src="assets/js/calendars.js"></script>
+</body>
+</html>
